@@ -18,6 +18,10 @@
 
 /* Nav Bar */
 .navbar{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
     padding: 0;
 }
 .navbar .container-fluid{
@@ -103,7 +107,7 @@ justify-content: flex-end;
         --leftrightmargin: 1rem;
     }
     .container-fluid{
-        padding:1rem 1rem;
+        padding:0.5rem 1rem 0.5rem;
 
     }
 
