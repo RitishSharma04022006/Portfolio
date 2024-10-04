@@ -488,7 +488,7 @@ justify-content: flex-end;
 .tool2,
 .tool3,
 .tool4 {
-    border: 3px solid #FCCD2A;
+    border: 4px solid #FCCD2A;
     background-color: white;
     display: flex;
     justify-content: center;
