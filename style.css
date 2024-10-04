@@ -302,7 +302,7 @@ justify-content: flex-end;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 4rem 0 1rem 0;
+    padding: 4rem 0 0rem 0;
     background-color: #0B192C;
 }
 
@@ -354,7 +354,7 @@ justify-content: flex-end;
 
 @media only screen and (max-width:768px) {
     .aboutme h2 {
-        font-size: var(--headingsizesmalldisplays);
+        font-size: 2.5rem;
     }
 
     .aboutme .box1 p {
@@ -364,20 +364,40 @@ justify-content: flex-end;
 
     .aboutme .box1 {
         width: 100%;
+        /* height: 20%; */
     }
 
     .aboutme .box2 {
         width: 100%;
+        /* height: 30%; */
     }
 
     .aboutme .box2 img {
-        height: 80%;
+        height: 100%;
         width: 80%;
     }
 
     .aboutme .box2 {
         padding: var(--leftrightmargin);
     }
+}
+
+@media only screen and (max-width:425px){
+    .aboutme .box2 img {
+        height: 100%;
+        width: 80%;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px)  {
+.aboutme .box2{
+    width: 100%;
+    height: 346px;
+}
+
+.aboutme .box2 img {
+    width: 60%;
+}
 }
 
 
@@ -395,12 +415,23 @@ justify-content: flex-end;
     color: white;
 }
 
-/* .skillsbox {
+.skillsbox {
     color: #16f2b3;
     background-color: #0B192C;
     width: 100%;
-    padding: 0rem var(--leftrightpadding) 1rem;
+    padding: 4rem var(--leftrightpadding) 1rem;
     font-size: var(--headingsfontsize);
+}
+
+.skillsbox h1{
+    font-size:4rem;
+    padding: 0 0 1rem;
+}
+
+@media only screen and (max-width:768px){
+    .skillsbox h1{
+        font-size: 2.5rem;
+    }
 }
 
 .skillsbox .skills {
@@ -412,7 +443,7 @@ justify-content: flex-end;
 }
 
 .skillsbox .skills .boxes {
-    border: 2px solid #3A6D8C;
+    border: 2px solid #FCCD2A;
     border-radius: 12px;
     transition: 0.1s linear;
 }
@@ -428,6 +459,22 @@ justify-content: flex-end;
     padding: 1rem 1rem 0;
 }
 
+@media only screen and (max-width:426px){
+    .skillsbox .skills .boxes .boxheading {
+        color: white;
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 1rem 1rem 0;
+    }
+
+    .skillsbox .skills{
+        display: grid;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+
 
 .skillsbox .skills .boxes .tools {
     margin: 1rem;
@@ -441,17 +488,17 @@ justify-content: flex-end;
 .tool2,
 .tool3,
 .tool4 {
-    border: 4px solid #3A6D8C;
-    background-color: #295F98;
+    border: 3px solid #FCCD2A;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
     width: 100%;
-    height: 50%;
+    height: 60%;
 }
 
 .skillsbox .skills .boxes .tools  img{
     width: 100%;
     height: 100%;
-} */
+}
